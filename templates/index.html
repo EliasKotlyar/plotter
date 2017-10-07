@@ -1,0 +1,68 @@
+<!-- Got from https://github.com/tristil/usb-rocket-launcher-node/ -->
+<!doctype html>
+<html>
+<head>
+    <title>Control of the Plotter</title>
+    <link rel='stylesheet' href="{{url_for('static', filename='css/jquerymobile.css') }}"/>
+    <script type='text/javascript' src="{{url_for('static', filename='js/jquery-1.7.1.min.js') }}"></script>
+    <script type='text/javascript' src="{{url_for('static', filename='js/jquery.mobile.js') }}"></script>
+    <script type='text/javascript' src="{{url_for('static', filename='js/plotter.js') }}"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+<div class='container' data-role='page'>
+    <div data-role='header'>
+        <div><h2>Plotter Control</h2></div>
+    </div>
+
+    <div data-role='content'>
+
+        <div class='ui-grid-b'>
+            <div class='ui-block-a'>&nbsp;</div>
+            <div class='ui-block-b'>
+                <input type='button' id='up' data-role='button' data-icon=''
+                       data-iconpos='top' data-inline='true' value='Up'>
+            </div>
+        </div>
+
+        <div class='ui-grid-b'>
+
+            <div class='ui-block-a'>
+                <input type='button' id='left' data-mini='true' data-role='button' data-icon=''
+                       data-inline='true' value='Left'>
+            </div>
+
+            <div class='ui-block-b'>
+                <input type='button' id='draw' data-role='button' data-icon=''
+                       data-iconpos='bottom' data-inline='true' value='Draw'>
+            </div>
+
+            <div class='ui-block-c'>
+                <input type='button' id='right' data-role='button' data-icon=''
+                       data-iconpos='right' data-inline='true' value='Right'>
+            </div>
+        </div>
+
+        <div class='ui-grid-b'>
+            <div class='ui-block-a'>&nbsp;</div>
+            <div class='ui-block-b'>
+                <input type='button' id='down' data-role='button' data-icon=''
+                       data-iconpos='bottom' data-inline='true' value='Down'>
+            </div>
+        </div>
+        <div class="data">
+            X:
+            <input id="xvalue" value="1000"/>
+            Y:
+            <input id="yvalue" value="1000"/>
+            Step:
+            <input id="step" value="300"/>
+            <input type='button' id='go' data-role='button' data-icon=''
+                       data-iconpos='left' data-inline='true' value='GO!'>
+        </div>
+
+    </div>
+</div>
+</body>
+</html>
